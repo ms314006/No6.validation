@@ -171,7 +171,7 @@ $(document).ready(function () {
     };
 
     var checkPasswordMatch = function (obj) {
-        if (obj.value === $('#password').val() && $('#password').val() >= 8) {
+        if (obj.value === $('#password').val() && $('#password').val().length >= 8) {
             return true;
         }
 
